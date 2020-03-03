@@ -38,19 +38,8 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 
 export default {
-  name: 'Header',
-
-  computed: {
-    ...mapGetters(['selectedLocale', 'secondLocale'])
-  },
-
-  methods: {
-    switchLocale () {
-      this.$store.dispatch('SwitchLocale')
-    }
-  }
+  name: 'Header'
 }
 </script>
